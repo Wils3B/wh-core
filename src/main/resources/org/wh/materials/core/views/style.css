@@ -1,0 +1,156 @@
+.winBtn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+}
+
+.winBtn:hover {
+    -fx-border-color: white;
+    -fx-background-color: rgba(200, 200, 200, 0.5);
+}
+
+.winBtn:pressed {
+    -fx-border-color: transparent;
+    -fx-background-color: rgba(220, 220, 220, 0.6);
+}
+
+.stickBtn40 {
+    -fx-pref-width: 44px;
+    -fx-pref-height: 44px;
+    -fx-min-width: 44px;
+    -fx-min-height: 44px;
+    -fx-margin: 2px;
+}
+
+.winBtn2 {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: lightgray;
+    -fx-min-width: 100px;
+    -fx-padding: 4px 0 4px 0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.winBtn2:hover {
+    -fx-background-color: rgba(200, 200, 200, 0.5);
+    -fx-border-color: grey;
+}
+
+.winBtn2:pressed {
+    -fx-background-color: rgba(220, 220, 220, 0.6);
+    -fx-border-color: white;
+}
+
+.profil-small {
+    -fx-background-color: rgba(200, 200, 200, .4);
+    -fx-background-radius: 30px;
+}
+
+.profil-large {
+    -fx-background-color: rgba(200, 200, 200, .4);
+    -fx-background-radius: 90px;
+}
+
+.WinUserBtn {
+    -fx-padding: 4px 8px 4px 8px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-background-radius: 0px;
+    -fx-max-width: 300px;
+    -fx-min-width: 200px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.WinUserBtn:hover {
+    -fx-background-color: rgba(150, 150, 150, 0.5);
+}
+
+.WinUserBtn:selected {
+    -fx-background-color: rgba(79, 131, 220, .6);
+}
+
+.WinUserBtn:selected:hover {
+    -fx-background-color: rgba(79, 131, 220, .8);
+}
+
+.WinPasswordField {
+    -fx-background-color: rgba(70, 70, 70, .8);
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-background-insets: 0;
+}
+
+.WinPasswordField:focused {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.WinAdvancedPasswordField {
+    -fx-border-color: rgba(200, 200, 200, .8);
+    -fx-border-width: 2px;
+}
+
+.WinAdvancedPasswordField:hover {
+    -fx-border-color: white;
+}
+
+.WinAdvancedPasswordField .button {
+    -fx-background-color: rgba(180, 180, 180, 0.5);
+    -fx-background-radius: 0;
+}
+
+.WinAdvancedPasswordField .button:pressed {
+    -fx-background-color: rgba(160, 160, 160, 0.6);
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: rgba(220, 220, 220, 0.3);
+    -fx-margin: 0px 0px 0px 100px;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar:vertical > .thumb {
+    -fx-background-color: lightgrey;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar:vertical > .thumb:pressed {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-background-color: rgba(128, 128, 128, .5);
+    -fx-color: gray;
+    -fx-background-insets: 0;
+}
+
+.scroll-pane > .scroll-bar:vertical {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-margin-left: 10px;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: red;
+    -fx-background-insets: 0 1 1 0;
+}
+
+.tooltip {
+    -fx-background: rgba(30, 30, 30);
+    -fx-text-fill: white;
+    -fx-background-color: rgb(30, 30, 30);
+    -fx-background-radius: 0px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em; /* 10px */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0.0, 0, 3);
+    -fx-font-size: 1em;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 1px;
+}

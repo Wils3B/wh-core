@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.URL?>
+<StackPane fx:id="rootStack" onKeyPressed="#fondPressed" onMouseClicked="#fondClicked" prefHeight="540.0"
+           prefWidth="960.0" style="-fx-background-color: rgba(0,0,0,0.9);" xmlns="http://javafx.com/javafx/8.0.141"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.wh.materials.core.controllers.LoginController">
+    <children>
+        <ImageView fx:id="fond" fitHeight="540.0" fitWidth="960.0" preserveRatio="true" StackPane.alignment="TOP_LEFT">
+            <image>
+                <Image url="@../images/img1.jpg"/>
+            </image>
+            <viewport>
+                <Rectangle2D/>
+            </viewport>
+        </ImageView>
+        <VBox fx:id="centralBox" maxHeight="-Infinity" maxWidth="-Infinity">
+            <children>
+                <HBox fx:id="titleBox" alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <ImageView preserveRatio="true">
+                            <image>
+                                <Image url="@../images/Icone%20WH%20Core.png"/>
+                            </image>
+                        </ImageView>
+                        <Label fx:id="title" text="WH Core App." textFill="WHITE" underline="true">
+                            <font>
+                                <Font name="Trebuchet MS" size="64.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox fx:id="neBox" maxHeight="-Infinity" maxWidth="-Infinity" StackPane.alignment="TOP_RIGHT">
+            <children>
+                <Button fx:id="nextImage" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#nextImage"
+                        prefWidth="40.0">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/end_32px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="winBtn"/>
+                        <String fx:value="stickBtn40"/>
+                    </styleClass>
+                    <tooltip>
+                        <Tooltip text="Passer à l'image suivante"/>
+                    </tooltip>
+                </Button>
+            </children>
+            <StackPane.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </StackPane.margin>
+        </HBox>
+        <HBox fx:id="seBox" maxHeight="-Infinity" maxWidth="-Infinity" spacing="5.0" StackPane.alignment="BOTTOM_RIGHT">
+            <children>
+                <Button fx:id="fullscreen" mnemonicParsing="false" onMouseClicked="#fullScreen" prefWidth="40.0">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/resize_diagonal_32px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="winBtn"/>
+                        <String fx:value="stickBtn40"/>
+                    </styleClass>
+                    <tooltip>
+                        <Tooltip text="Plein écran"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="shutdown" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#close"
+                        prefWidth="40.0">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/shutdown_32px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="winBtn"/>
+                        <String fx:value="stickBtn40"/>
+                    </styleClass>
+                    <tooltip>
+                        <Tooltip text="Fermer l'application"/>
+                    </tooltip>
+                </Button>
+            </children>
+            <StackPane.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </StackPane.margin>
+        </HBox>
+        <ScrollPane fx:id="swScrll" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity"
+                    minHeight="-Infinity" minViewportWidth="200.0" pannable="true" prefHeight="176.0"
+                    style="-fx-background-color: transparent; -fx-base: transparent;" StackPane.alignment="BOTTOM_LEFT">
+            <StackPane.margin>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </StackPane.margin>
+            <content>
+                <VBox fx:id="swBox" maxHeight="-Infinity" maxWidth="-Infinity">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="20:05">
+                            <font>
+                                <Font name="Segoe UI Semilight" size="90.0"/>
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Samedi 04 Mai">
+                            <font>
+                                <Font size="40.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+    <stylesheets>
+        <URL value="@style.css"/>
+        <URL value="@backer.css"/>
+    </stylesheets>
+</StackPane>

@@ -1,0 +1,7 @@
+.WH-backer {
+    -fx-tab-max-height: 0;
+}
+
+.WH-backer .tab-header-area {
+    visibility: hidden;
+}

@@ -1,0 +1,57 @@
+.skip-next {
+    -fx-min-width: 120px;
+    -fx-font-size: 18px;
+}
+
+.WHSlider {
+    -fx-tab-max-height: 0;
+    -fx-background-color: white;
+}
+
+.WHSlider .tab-header-area {
+    visibility: hidden;
+}
+
+.subBox {
+    -fx-background-color: #ccffcc;
+    -fx-padding: 5px;
+}
+
+.semi-flou {
+    -fx-background-color: rgba(100, 100, 100, .7);
+    -fx-padding: 5px;
+}
+
+.semi-clair {
+    -fx-background-color: rgba(200, 200, 200, .5);
+    -fx-padding: 5px;
+}
+
+.priority {
+    -fx-background-color: #f33;
+    -fx-text-fill: white;
+}
+
+.mail-services * {
+    -fx-border-width: 3px;
+    -fx-border-color: transparent transparent #f33 transparent;
+    -fx-padding: 0px 0px 5px 0px;
+}
+
+.mail-services *:hover {
+    -fx-border-width: 3px;
+    -fx-border-color: transparent transparent #33f transparent;
+    -fx-padding: 0px 0px 5px 0px;
+}
+
+.zone-enregistrement {
+    -fx-font-family: 'Bradley Hand ITC';
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-border-width: 3px;
+    -fx-border-color: #f33;
+}
+
+.zone-enregistrement > .hbox {
+    -fx-spacing: 5px;
+}

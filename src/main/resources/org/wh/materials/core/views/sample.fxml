@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <StackPane prefHeight="486.0" prefWidth="600.0" style="-fx-background-color: rgba(0,0,0,0.3);">
+            <children>
+                <VBox alignment="TOP_CENTER" maxWidth="-Infinity" style="-fx-background-color: white;"
+                      StackPane.alignment="TOP_LEFT">
+                    <children>
+                        <HBox alignment="CENTER" style="-fx-background-color: darkorange;">
+                            <children>
+                                <Label text="Menu" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="20.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </padding>
+                        </HBox>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="53.0" prefWidth="209.0" text="First">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Second">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="63.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Third">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets bottom="3.0" top="3.0"/>
+                            </VBox.margin>
+                        </Separator>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="116.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Fourth">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="169.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Fifth">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="271.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Sixth">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0"/>
+                        <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
+                        <JFXButton alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="314.0" prefHeight="53.0"
+                                   prefWidth="209.0" text="Exit">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </JFXButton>
+                    </children>
+                    <effect>
+                        <DropShadow color="#434343" height="59.55" radius="27.049999999999997" width="50.65"/>
+                    </effect>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</StackPane>
